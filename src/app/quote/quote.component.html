@@ -21,7 +21,8 @@
                     <hr>
                     <ul>
                       <li *ngFor='let quote of quotes'>
-                        {{quote.quote}}
+                        {{quote.quote}}                        
+                        <app-quote-details [quote] = 'quote'></app-quote-details>
                       </li>
                     </ul>
                   </div>
