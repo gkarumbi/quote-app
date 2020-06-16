@@ -1,5 +1,36 @@
-<div class="jumbotron">
-    <p>Welcome to our quote app</p>
-    <i class="fa fa-thumbs-up"></i>
-    <i class="fa fa-thumbs-down"></i>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote App</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="jumbotron">
+            <h1 class="lead display-4">Welcome to our Quote app</h1>
+            <i class="fa fa-thumbs-up"></i>
+            <i class="fa fa-thumbs-down"></i>
+        </div>
+        <!-- Main body with the forms and cards goes here -->
+        <div class="row">
+            <div class="col-md-6 cards">
+                <div>
+                    <h1>My Quotes</h1>
+                    <hr>
+                    <ul>
+                      <li *ngFor='let quote of quotes'>
+                        {{quote.quote}}
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-md-6 form">
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
