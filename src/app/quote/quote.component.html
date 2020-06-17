@@ -10,8 +10,7 @@
         <!-- Header -->
         <div class="jumbotron">
             <h1 class="lead display-4">Welcome to our Quote app</h1>
-            <i class="fa fa-thumbs-up"></i>
-            <i class="fa fa-thumbs-down"></i>
+          
         </div>
         <!-- Main body with the forms and cards goes here -->
         <div class="row">
@@ -21,16 +20,22 @@
                     <hr>
                     <ul>
                         <div *ngFor  = 'let quote of quotes; let i = index'>
-                        <li>{{quote.quote}}</li>
-                               <button (click) = 'toggleDetails(i)'>More</button>                        
-                                <app-quote-details *ngIf = 'quote.showMore' [quote] = 'quote'></app-quote-details>
+                            <blockquote class="blockquote">
+                                <p class="mb-1">"{{quote.quote}}"</p>
+                                <footer class="blockquote-footer">Author: <cite title="Source Title">{{quote.author}}</cite></footer>
+                                <app-up-vote></app-up-vote>
+                            </blockquote>
+                        
+                        
+                               <button class="btn btn-info" (click) = 'toggleDetails(i)'>More</button>                        
+                                <app-quote-details *ngIf = 'quote.showMore' [quote] = 'quote' (isRead) = 'quoteDelete($event,i)'></app-quote-details>
                             
                         </div>
                     </ul>
                   </div>
             </div>
             <div class="col-md-6 form">
-                
+                <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
             </div>
         </div>
         
