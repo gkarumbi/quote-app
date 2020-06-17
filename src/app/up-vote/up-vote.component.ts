@@ -9,6 +9,8 @@ import {Quote} from "../quote";
 export class UpVoteComponent implements OnInit {
 
   @Output() isRead = new EventEmitter <boolean>();
+
+  
   upVotes = 0;
   downVotes = 0;
 
