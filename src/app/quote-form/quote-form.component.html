@@ -28,8 +28,7 @@
             <textarea class="form-control" id="quote" rows="4" [(ngModel)] = "newQuote.quote" name="quote" #quote = 'ngModel' required></textarea>
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
                 <p>Please inspire us with your quote!</p>
-              </div>
-           
+              </div>          
   
         </div>
         <button type="submit" class="btn btn-success">Add Quote</button>
