@@ -1,27 +1,56 @@
 # QuoteApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Share inspirational quotes with others through this app
 
-## Development server
+## Pre-requsites
+Basic knowledge of HTML,Bootstrap, Angular, Typescript,and Angular CLI
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Requirements
+-Text Editor;  VsCode, Atom not mandatory but preffered
+-Git knowledge with the latest version installed
 
-## Code scaffolding
+### Technologies Used
+- HTML,Bootstrap, Angular, Typescript
+- Atom, VSCode
+- Angular CLI
+- Git VCS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup Installations Requirements
+   * To run the application:
 
-## Build
+    - Clone Repository on Local Machine `git clone https://github.com/gkarumbi/quote-app.git`
+    - cd into Directory `cd quote-app`
+    - ng serve to launch the server
+    - Open localhost:4200
+    - Share your inspirational quote
+    
+    ### Development
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Want to contribute? Great!
 
-## Running unit tests
+To fix a bug or enhance an existing module, follow these steps:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
 
-## Running end-to-end tests
+## Known Bugs
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/gkarumbi/quote-app/issues/new) by including your search query and the expected result.
 
-## Further help
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/gkarumbi/quote-app/issues/new). Please include sample queries and their corresponding results.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### License
+
+*MIT*
+Copyright (c) 2020 **George Karumbi**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
